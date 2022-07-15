@@ -1,13 +1,7 @@
 node {
-    stage('Ready') {
-        sh "echo 'Ready'"
+    sh 'ls -l'
+    dir ('foo') {
+        writeFile file:'dummy', text:''
     }
-
-    stage('Build') {
-        sh "echo 'Build'"
-    }
-
-    stage('Deploy') {
-        sh "echo 'Deploy'"
-    }
+    sh 'ls -l'
 }
