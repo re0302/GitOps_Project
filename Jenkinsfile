@@ -1,5 +1,1 @@
-node {
-    stage('Ready') {
-        sh "echo 'Ready'"
-    }
-}
+test to build
