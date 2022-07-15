@@ -4,10 +4,10 @@ node {
     }
 
     stage('Build') {
-        sh "echo 'Build Jar'"
+        sh "echo 'Build'"
     }
 
     stage('Deploy') {
-        sh "echo 'Deply AWS'"
+        sh "echo 'Deply'"
     }
 }
